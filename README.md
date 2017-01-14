@@ -17,3 +17,6 @@ For each integer n, if 1 < n < 9; display english representation of the digit, e
 
 #### Functions
 - You have to write a program which reads four arguments and returns the greatest of them.
+
+#### Pointers
+- Use pointers to read two integers and return their sum and the absolute difference. 
