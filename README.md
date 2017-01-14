@@ -20,3 +20,6 @@ For each integer n, if 1 < n < 9; display english representation of the digit, e
 
 #### Pointers
 - Use pointers to read two integers and return their sum and the absolute difference. 
+
+####Arrays
+- You'll be an given array of  integers and you have to print the integers in the reverse order.
