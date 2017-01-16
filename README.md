@@ -26,3 +26,9 @@ For each integer n, if 1 < n < 9; display english representation of the digit, e
 
 #### Variable sized Arrays
 - Get familiarized with the usage of variable sized arrays.
+
+#### Virtual Functions
+- This problem is to get you familiar with virtual functions. Create three classes Person, Professor and Student. The class Person should have data members name and age. The classes Professor and Student should inherit from the class Person.
+
+#### Boxit
+- Design a class named Box whose dimensions are integers and private to the class. The dimensions are labelled: length , breadth , and height . Get familiarized with function and operator overloading(using this operator and friend function).
