@@ -32,3 +32,6 @@ For each integer n, if 1 < n < 9; display english representation of the digit, e
 
 #### Boxit
 - Design a class named Box whose dimensions are integers and private to the class. The dimensions are labelled: length , breadth , and height . Get familiarized with function and operator overloading(using this operator and friend function).
+
+#### Inherited code
+- Revision of exception handling
