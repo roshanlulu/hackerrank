@@ -10,3 +10,5 @@
  ###
 ####
 ```
+#### Time Conversion
+- Convert and print the given time in 24-hour format.
