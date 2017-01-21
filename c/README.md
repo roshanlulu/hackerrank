@@ -12,3 +12,6 @@
 ```
 #### Time Conversion
 - Convert and print the given time in 24-hour format.
+
+#### Circular Array rotation
+- Access array values after circular rotation
