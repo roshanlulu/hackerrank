@@ -15,3 +15,9 @@
 
 #### Circular Array rotation
 - Access array values after circular rotation
+
+#### Time in words
+- Given the time in numerals we may convert it into words, as shown below:
+
+
+
