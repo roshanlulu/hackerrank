@@ -20,4 +20,7 @@
 - Given the time in numerals we may convert it into words, as shown below:
 
 
-
+#### New year chaos
+- Print an integer denoting the minimum number of bribes needed to get the queue into its final state; print Too chaotic if the state is invalid (requires Person X to bribe more than 2 people).
+- Check Hacker rank for futher description.
+`https://www.hackerrank.com/challenges/new-year-chaos`
