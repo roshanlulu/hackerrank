@@ -34,3 +34,7 @@ Given a sorted list with an unsorted number  in the rightmost cell, can you writ
 
 #### Insertion sort Part 2
 - In Insertion Sort Part 1, you sorted one element into an array. Using the same approach repeatedly, can you sort an entire unsorted array?
+
+#### Quicksort Part 1
+- This is a divide-and-conquer algorithm called Quicksort (also known as Partition Sort). Create 3 smaller arrays left, right and equal based on a pivot value = array[0]; and stitch them together. 
+
