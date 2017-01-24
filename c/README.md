@@ -31,3 +31,6 @@
 #### Insertion sort Part 1
 - nsert element into sorted list 
 Given a sorted list with an unsorted number  in the rightmost cell, can you write some simple code to insert  into the array so that it remains sorted?
+
+#### Insertion sort Part 2
+- In Insertion Sort Part 1, you sorted one element into an array. Using the same approach repeatedly, can you sort an entire unsorted array?
