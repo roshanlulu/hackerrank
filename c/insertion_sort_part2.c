@@ -14,10 +14,9 @@ void insertion_sort(int array_size, int * array){
       subarraysize--;
     }
     array[subarraysize] = sortnum;
-    for(int innerloopcnt = 0; innerloopcnt < array_size; innerloopcnt++){
-      printf("%d ", array[innerloopcnt]);
-    }
-    printf("\n");
+  }
+  for(int innerloopcnt = 0; innerloopcnt < array_size; innerloopcnt++){
+    printf("%d ", array[innerloopcnt]);
   }
 }
 
