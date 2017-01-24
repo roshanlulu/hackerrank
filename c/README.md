@@ -27,3 +27,7 @@
 
 #### Intro to Tutorial challenges
 - This is a simple challenge to get things started. Given a sorted array () and a number (), can you print the index location of  in the array?
+
+#### Insertion sort Part 1
+- nsert element into sorted list 
+Given a sorted list with an unsorted number  in the rightmost cell, can you write some simple code to insert  into the array so that it remains sorted?
