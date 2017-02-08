@@ -1,38 +1,50 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include <stdbool.h>
 
-#define found_chaotic UINT16_MAX
+
+void calculate_bribe(int *q, int qcount){
+
+  int bribe_cnt = 0, max;
+  bool found_chaotic = false;
+
+  for (int j = qcount - 1; j >= 0; j--){
+    // Calculate if chaotic queue found and break if necessary
+    if(q[j] - (j + 1) > 2){
+      found_chaotic = true;
+      break;
+    }
+    max = 0;
+    if(q[j] - 2 > max){ max = q[j] - 2;}
+    for(int i = max; i < j; i++){
+      bribe_cnt = (q[i] > q[j]) ? bribe_cnt + 1 : bribe_cnt;
+    }
+  }
+  if(found_chaotic){
+    printf("%s\n", "Too chaotic");
+  }
+  else{
+    printf("%d\n", bribe_cnt);
+  }
+}
 
 int main(){
-  int n, T, total_bribe_cnt = 0, crnt_bribe_cnt = 0;
+  int n, T;
   int* q;
-  int *answer;
   
   scanf("%d", &T);
-  answer = (int *)malloc(sizeof(int) * T);
-  for(int tcentry; tcentry < T; tcentry++){
+  for(int i = 0; i < T; i++){
     // Input t-th test case
     scanf("%d", &n);
     // Allocate memory for the final q 
     q = (int *)malloc((sizeof(int) * n));
     // Get q entries 
-    for (int qentry = 0; qentry < n; qentry++){
-      scanf("%d", (q + qentry));
-      crnt_bribe_cnt = ((q[qentry]) - (qentry + 1) < 0) ? 0 : (q[qentry]) - (qentry + 1);
-      total_bribe_cnt = ((total_bribe_cnt == found_chaotic) || (crnt_bribe_cnt > 2))? 
-                        found_chaotic : (total_bribe_cnt + crnt_bribe_cnt);
+    for (int j = 0; j < n; j++){
+      scanf("%d", (q + j));
     }
-    answer[tcentry] = total_bribe_cnt;
-  }
-  // Display answer
-  for(int tcentry; tcentry < T; tcentry++){
-    if(*(answer + tcentry) == found_chaotic){
-      printf("%s\n", "Too chaotic");
-    }
-    else{
-      printf("%d\n", *(answer + tcentry));
-    }
+    calculate_bribe(q, n);
+    free(q);
   }
   return 0;
 }
